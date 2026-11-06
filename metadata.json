@@ -1,0 +1,6 @@
+{
+  "name": "Nova Island Personalization Studio",
+  "description": "Ultra-premium Android Dynamic Island personalization studio with real-time interactive phone preview, RGB/HEX & gradient engine, shape & animation editors, 26+ themes, scheduling, DataStore/Room persistence verification, and Jetpack Compose code generation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

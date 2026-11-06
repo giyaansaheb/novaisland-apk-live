@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    filter: brightness(1) drop-shadow(0 0 8px var(--island-glow-color, rgba(99, 102, 241, 0.5)));
+  }
+  50% {
+    filter: brightness(1.18) drop-shadow(0 0 22px var(--island-glow-color, rgba(99, 102, 241, 0.9)));
+  }
+}
+
+@keyframes liquidMorph {
+  0%, 100% {
+    transform: scaleX(1) scaleY(1);
+  }
+  33% {
+    transform: scaleX(1.035) scaleY(0.965);
+  }
+  66% {
+    transform: scaleX(0.98) scaleY(1.025);
+  }
+}
+
+@keyframes waveformBounce {
+  0%, 100% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.animate-glow-pulse {
+  animation: glowPulse 2.4s ease-in-out infinite;
+}
+
+.animate-liquid-morph {
+  animation: liquidMorph 3.2s ease-in-out infinite;
+}
